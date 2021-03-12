@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 import unittest
 
-class NewVisitorTest(unittest.TestCase):  # unittest.TestCase ?
+class NewVisitorTest(unittest.TestCase):  # an object from unittest.TestCase 
 
     def setUp(self):
         self.browser = webdriver.Firefox()
