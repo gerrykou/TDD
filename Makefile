@@ -14,3 +14,6 @@ functional-test:
 
 unit-test:
 	virtualenv/bin/python3 manage.py test
+
+kill-server:
+	kill $(ps aux | grep '[/]home/gerry/Documents/projects/tdd3/virtualenv/bin/python3 manage.py runserver' | awk '{print $2}')
